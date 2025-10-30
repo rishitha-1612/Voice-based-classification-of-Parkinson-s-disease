@@ -1,0 +1,9 @@
+numpy
+pandas
+sounddevice
+scipy
+joblib
+colorama
+scikit-learn
+imbalanced-learn
+praat-parselmouth
