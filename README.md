@@ -25,8 +25,10 @@ A **Streamlit** interface enables real-time voice testing and instant visualizat
 ---
 
 ## Dataset
-- Source: UCI Parkinson’s Disease Dataset (file: `pd_voice_data.csv`)  
-- Contents: 22 extracted acoustic features + binary label `status` (1 = Parkinson’s, 0 = Healthy)  
+- For training the model: [UCI Parkinson’s Dataset](https://archive.ics.uci.edu/dataset/174/parkinsons) (file: `pd_voice_data.csv`)  
+- Contents: 22 extracted acoustic features + binary label `status` (1 = Parkinson’s, 0 = Healthy)
+- [Voice Samples Dataset – Figshare](https://figshare.com/articles/dataset/Voice_Samples_for_Patients_with_Parkinson_s_Disease_and_Healthy_Controls/23849127)
+ can be used to test and validate the trained Parkinson’s Disease detection model. (file: `PD Voices.zip`)  
 - Included in repository for reproducibility.
 
 ---
