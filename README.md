@@ -1,4 +1,4 @@
-# Parkinson’s Disease Detection using Voice and Machine Learning
+# Parkinson’s Disease Detection using Voice
 
 This project develops a **machine learning–based diagnostic tool** for detecting Parkinson’s Disease from voice recordings.  
 It extracts acoustic and frequency-based features such as **jitter, shimmer, and pitch variation**, and trains a **Gradient Boosting Classifier** for accurate classification.  
