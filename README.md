@@ -1,47 +1,72 @@
 # Parkinson’s Disease Detection using Voice
 
-This project develops a **machine learning–based diagnostic tool** for detecting Parkinson’s Disease from voice recordings.  
-It extracts acoustic and frequency-based features such as **jitter, shimmer, and pitch variation**, and trains a **Gradient Boosting Classifier** for accurate classification.  
-A **Streamlit interface** enables real-time testing and instant result visualization.
+This project presents a **machine-learning-based diagnostic tool** for detecting Parkinson’s Disease from voice recordings.  
+It extracts acoustic and frequency-based features such as *jitter*, *shimmer*, and *pitch variation*, and trains a **Gradient Boosting Classifier** for classification.  
+A **Streamlit** interface enables real-time voice testing and instant visualization of results.
 
 ---
 
-## 🚀 Features
+## Features
 1. Extracts 22 key acoustic features from voice recordings.  
-2. Uses **Gradient Boosting** with **Grid Search** for high-accuracy classification.  
-3. Records or uploads voice samples directly through Streamlit.  
-4. Displays prediction results and confidence levels in real time.  
-5. Supports both offline training and live voice testing.
+2. Implements preprocessing (scaling, balancing) and uses **Gradient Boosting** with grid‐search for high accuracy.  
+3. Supports voice sample **upload or live recording** through the Streamlit web interface.  
+4. Displays prediction results with **confidence scores** in real time.  
+5. Offers both offline model training and live voice-based testing.
 
 ---
 
-## 🧠 Technologies Used
+## Technologies Used
 - **Python**, **Streamlit**  
-- **Pandas**, **NumPy**, **scikit-learn**, **imblearn**  
-- **Parselmouth (Praat API)** for feature extraction  
-- **Sounddevice** and **SciPy** for voice recording and processing  
-- **Joblib** for model storage and retrieval  
+- Libraries: **Pandas**, **NumPy**, **scikit-learn**, **imblearn**  
+- **Parselmouth (Praat API)** for acoustic feature extraction  
+- **sounddevice**, **SciPy** for live audio capture and signal processing  
+- **joblib** for model serialization and loading
 
 ---
 
-## 📊 Dataset
-- **Source:** UCI Parkinson’s Disease Dataset (`pd_voice_data.csv`)  
-- **Contents:** 22 extracted acoustic features and a binary `status` (1 = Parkinson’s, 0 = Healthy).  
+## Dataset
+- Source: UCI Parkinson’s Disease Dataset (file: `pd_voice_data.csv`)  
+- Contents: 22 extracted acoustic features + binary label `status` (1 = Parkinson’s, 0 = Healthy)  
+- Included in repository for reproducibility.
 
 ---
 
-## 🧩 How It Works
-1. Loads and preprocesses the Parkinson’s dataset.  
-2. Scales features using **StandardScaler** and balances data with **SMOTE**.  
-3. Trains a **Gradient Boosting Classifier** optimized through **Grid Search**.  
-4. Records or uploads voice samples via the Streamlit interface.  
-5. Extracts acoustic features and predicts Parkinson’s Disease in real time.  
-6. Displays the result (Healthy / Affected) with model confidence.
+## How It Works
+1. Load and preprocess the dataset (feature scaling, balancing with SMOTE).  
+2. Train and tune a Gradient Boosting Classifier to identify reliable performance.  
+3. In the user interface:  
+   - Record or upload a voice sample.  
+   - Extract acoustic features in real time.  
+   - Predict Parkinson’s status and display results with confidence.  
+4. Integrate predictions with a user-friendly Streamlit dashboard for easy access.
 
 ---
 
-## 🖥️ Running the Project
-### 1. Clone the repository
+## Running the Project
+Clone the repository
 ```bash
-git clone https://github.com/yourusername/parkinsons-voice-detection.git
-cd parkinsons-voice-detection
+git clone https://github.com/rishitha-1612/Voice-based-classification-of-Parkinson-s-disease.git
+cd Voice-based-classification-of-Parkinson-s-disease
+```
+Install dependencies
+```
+pip install -r requirements.txt
+```
+
+Train the model (optional if using provided model)
+```
+python mic_test.py   # or your training script if available
+```
+
+Launch the Streamlit interface
+
+```
+streamlit run parkinsons_streamlit_app.py
+```
+
+## Future Scope
+Incorporate deep learning models (e.g., CNN, RNN) to improve classification accuracy.
+Expand dataset with diverse voice samples (multiple languages, varied demographics).
+Add medical report generation, patient history tracking and integration with healthcare systems.
+
+### Authors
