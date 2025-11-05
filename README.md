@@ -72,7 +72,7 @@ Expand dataset with diverse voice samples (multiple languages, varied demographi
 Add medical report generation, patient history tracking and integration with healthcare systems.
 
 ### Authors
-Project developed by a team of three Computer Science Engineering students from RV Institute of Technology and Management, working collaboratively on all modules including AI development, OCR processing, and financial data analysis.
+Project developed by a team of four Computer Science Engineering students from RV Institute of Technology and Management, working collaboratively on all modules including AI development, OCR processing, and financial data analysis.
 
 | Name              | GitHub                              | Email ID                                               |
 |-------------------|-------------------------------------|--------------------------------------------------------|
