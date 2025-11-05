@@ -78,5 +78,5 @@ Project developed by a team of three Computer Science Engineering students from 
 |-------------------|-------------------------------------|--------------------------------------------------------|
 | Sowmya P R        | https://github.com/2406-Sowmya      | srsb2406@gmail.com                                     |
 | Aishwarya R       | https://github.com/AISHWARYA251166  | ar2573564@gmail.com                                    |
-| M N Monisha       |
+| M N Monisha       | https://github.com/rvitmonisha      | mnmonisha@gmail.com                                    |
 | Rishitha Rasineni | https://github.com/rishitha-1612    | rishitharasineni@gmail.com                             |
